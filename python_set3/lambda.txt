@@ -1,0 +1,32 @@
+Syntax:
+
+lambda argument:expression
+
+
+1. can take any number of arguments,
+but can hae only one expression
+
+2. Expression is executed and result is returned 
+
+3. lambda is written in a single line of code and can also
+ invoke immediately
+
+Example:
+
+lambda p1,p2: expression
+
+p1 and p2 are parameters which are passed to 
+lambda function.
+
+1. we can add as many or few parameters
+
+2. no need of brackets around parameters
+
+square = lambda x : x*x
+
+lambda function starts with lambda keyword 
+
+which can be as function 
+
+def square(x):
+return x*x
