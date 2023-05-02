@@ -1,7 +1,6 @@
 # Python_Technical_CRT
 
-![image](https://user-images.githubusercontent.com/96654142/235641379-66c8090d-0be4-4147-b57b-6af6b70fefc5.png)
-
+![Python-logo-notext svg-removebg-preview](https://user-images.githubusercontent.com/96654142/235642216-1996eb1a-3ea5-4baa-8f45-3326c49fb5d3.png)
 
 Programs and Notes - Python Technical Training
 
