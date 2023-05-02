@@ -6,7 +6,7 @@ For notes and theory - https://github.com/Techie03/Python_Technical_CRT/tree/mai
 
 **Python Programs:**
 
-1) https://github.com/Techie03/Python_Technical_CRT/tree/main/python_set1
+1) [python_set1] (https://github.com/Techie03/Python_Technical_CRT/tree/main/python_set1)
 
 2) https://github.com/Techie03/Python_Technical_CRT/tree/main/python_set2
 
