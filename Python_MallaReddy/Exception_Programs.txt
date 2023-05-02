@@ -1,0 +1,98 @@
+1.Python exception handling program (Handling divide by zero exception)
+try:
+    num1 = int(input("Enter First Number: "))
+    num2 = int(input("Enter Second Number: "))
+
+    result = num1 / num2
+
+    print(result)
+except ValueError as e:
+    print("Invalid Input Please Input Integer...")
+except ZeroDivisionError as e:
+    print(e)
+
+2.Python exception handling program (Handling Type exception)
+
+while True:
+    try:
+        num = int(input("Enter First Number: "))
+        print(num)
+        break
+    except ValueError as e:
+        print("Invalid Input..Please Input Integer Only..")
+
+3.ValueError Exception in Python
+
+# Python program to illustrate ValueError Exception 
+
+# Try Block Starts
+try:
+    # Taking input from the user ... 
+    # The input strictly needs to be an integer value...
+    num1 = int(input("Enter number 1 : "))
+    num2 = int(input("Enter number 2 : "))
+
+    # Adding the two numbers and printing their result.
+    numSum = num1 + num2
+    print("The sum of the two numbers is ",numSum)
+    
+# except block 
+except ValueError as ex:
+    print(ex)
+
+4.Value Error 
+
+# Python program to illustrate valueError Exception 
+import math
+
+# Try Block Starts
+try:
+    # Taking input from the user ... 
+    # The input needs to be a positive integer value...
+    num1 = int(input("Enter number 1 : "))
+    
+    # finding the square root of the number. 
+    # So the number cannot be negative.
+    squareRoot = math.sqrt(num1)
+    print("The Square root of the number is ",squareRoot)
+    
+# except block 
+except ValueError as ex:
+    print(ex)
+
+5.illustrate index error in Python
+
+# Program to illustrate IndexError Exception in Python...
+
+# Try Block Starts
+try:
+    # List to store employee name 
+   employees = ["pankaj","amit","dilip","pooja","nitisha"]
+
+   id = int(input("Enter Id (1-5):"))
+   print("Your name is ",employees[id-1]," and your id is ",id)
+
+# Value error if the values is not in range 
+except ValueError as ex:
+    print(ex)
+
+# IndexError if the value is out of the list index...
+except IndexError as ex:
+    print(ex)
+
+6. Raise an Exception
+
+x = -1
+
+if x < 0:
+  raise Exception("Sorry, no numbers below zero")
+
+7. Raise an Exception
+
+​x = "hello"
+
+if not type(x) is int:
+  raise TypeError("Only integers are allowed")
+
+
+

@@ -1,0 +1,121 @@
+# Python Class & Object's Programming :
+
+1. To Define Python Class ,We use the class keyword to create a class in Python. 
+
+Syntax :
+
+class ClassName:
+    # class definition 
+
+Example:
+
+class Bike:
+    name = ""
+    gear = 0
+
+ Here,
+
+Bike - the name of the class
+name/gear - variables inside the class with default values "" and 0 respectively.
+
+#Python Objects
+
+An object is called an instance of a class. 
+ The syntax to create an object.
+
+objectName = ClassName()
+
+example:
+
+create class
+class Bike:
+    name = ""
+    gear = 0
+
+# create objects of class
+bike1 = Bike()
+
+#Access Class Attributes Using Objects
+
+We use the . notation to access the attributes of a class. For example,
+
+# modify the name attribute
+bike1.name = "Mountain Bike"
+
+# access the gear attribute
+bike1.gear
+
+#Python Methods
+
+We can also define a function inside a Python class. 
+A Python Function defined inside a class is called a method.
+
+#program Abstract
+
+A smartphone dealer in the locality is very worried about his records as his assistant
+ is not so serious about the overall turnover.
+
+He can't change his assistant because he is one from the family and therefore it turns out 
+to be a great problem for Rashid. 
+
+Rashid discussed this problem with one of his friends and he suggested he use a Computer 
+Program and manage this list of Phones by himself.
+
+Write python code where he can build a list of smartphones along with their model number and price.
+
+Enter the name of the Phone: iPhone 11
+Enter the model number: 7872878277878
+price: 64999
+
+Another Phone? y/n: y
+Enter the name of the Phone: Galaxy Note 5
+Enter the model number: 8787878739
+price: 45000
+
+Another Phone? y/n: y
+Enter the name of the Phone: Redmi 5 pro
+Enter the model number: 326356523265
+price: 15999
+Another Phone? y/n: n
+
+---The list of the phone that store have---
+1 .  iPhone 11 : 64999  ::7872878277878
+2 .  Galaxy Note 5 : 45000  ::8787878739
+3 .  Redmi 5 pro : 15999  ::326356523265
+
+#inheritance [ Single ]
+
+Syntax
+class derived-class(base class):  
+    <class-suite>   
+
+Syntax
+class derive-class(<base class 1>, <base class 2>, ..... <base class n>):  
+    <class - suite>   
+
+#inheritance [MultiLevel ]
+Syntax
+class class1:  
+    <class-suite>   
+class class2(class1):  
+    <class suite>  
+class class3(class2):  
+    <class suite>  
+.  
+
+#Python Multiple inheritance
+
+class Base1:  
+    <class-suite>  
+  
+class Base2:  
+    <class-suite>  
+.  
+.  
+.  
+class BaseN:  
+    <class-suite>  
+  
+class Derived(Base1, Base2, ...... BaseN):  
+    <class-suite>  
+

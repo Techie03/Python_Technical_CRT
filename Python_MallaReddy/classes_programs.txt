@@ -1,0 +1,267 @@
+1. # define a class
+class Bike:
+    name = ""
+    gear = 0
+
+# create object of class
+bike1 = Bike()
+
+# access attributes and assign new values
+bike1.gear = 11
+bike1.name = "Mountain Bike"
+
+print(f"Name: {bike1.name}, Gears: {bike1.gear} ")
+
+2. # define a class
+class Employee:
+    # define an attribute
+    employee_id = 0
+
+# create two objects of the Employee class
+employee1 = Employee()
+employee2 = Employee()
+
+# access attributes using employee1
+employee1.employeeID = 1001
+print(f"Employee ID: {employee1.employeeID}")
+
+# access attributes using employee2
+employee2.employeeID = 1002
+print(f"Employee ID: {employee2.employeeID}")
+
+
+3.# create a class
+class Room:
+    length = 0.0
+    breadth = 0.0
+
+    # method to calculate area
+    def calculate_area(self):
+        print("Area of Room =", self.length * self.breadth)
+
+# create object of Room class
+study_room = Room()
+
+# assign values to all the attributes
+study_room.length = 42.5
+study_room.breadth = 30.8
+
+# access method inside class
+study_room.calculate_area()
+
+
+4. #class Employee:
+    id = 10
+    name = "John"
+
+    def display(self):
+        print("ID: %d \nName: %s" % (self.id, self.name))
+    # Creating a emp instance of Employee class
+
+emp = Employee()
+
+# Deleting the property of object
+del emp.id
+# Deleting the object itself
+del emp
+emp.display()
+
+5.#class Employee:
+    id = 10
+    name = "Devansh"
+    def display (self):
+        print(self.id,self.name)
+# Creating a emp instance of Employee class
+emp = Employee()
+emp.display()
+
+6.## Python code to find student grade
+
+class Student:
+    def __init__(self):
+        self.__roll=0
+        self.__name=""
+        self.__marks=[]
+        self.__total=0
+        self.__per=0
+        self.__grade=""
+        self.__result=""
+
+    def setStudent(self):
+        self.__roll=int(input("Enter Roll: "))
+        self.__name=input("Enter Name: ")
+        print("Enter marks of 5 subjects: ")
+        for i in range(5):
+            self.__marks.append(int(input("Subject "+str(i+1)+": ")))
+
+    def calculateTotal(self):
+        for x in self.__marks:
+            self.__total+=x
+
+    def calculatePercentage(self):
+        self.__per=self.__total/5
+
+    def calculateGrade(self):
+        if self.__per>=85:
+            self.__grade="S"
+        elif self.__per>=75:
+            self.__grade="A"
+        elif self.__per>=65:
+            self.__grade="B"
+        elif self.__per>=55:
+            self.__grade="C"
+        elif self.__per>=50:
+            self.__grade="D"
+        else:
+            self.__grade="F"
+
+    def calculateResult(self):
+        count=0
+        for x in self.__marks:
+            if x>=50:
+                count+=1
+        if count==5:
+            self.__result="PASS"
+        elif count>=3:
+            self.__result="COMP."
+        else:
+            self.__result="FAIL"
+
+    def showStudent(self):
+        self.calculateTotal()
+        self.calculatePercentage()
+        self.calculateGrade()
+        self.calculateResult()
+        print(self.__roll,"\t\t",self.__name,"\t\t",self.__total,"\t\t",self.__per,"\t\t",self.__grade,"\t\t",self.__result)
+
+
+def main():
+    #Student object
+    s=Student()
+    s.setStudent()
+    s.showStudent()
+
+if __name__=="__main__":
+    main()
+
+7.## employee class code in Python
+
+class Employee:
+        def __init__(self): #Constructor
+                self.__id = 0
+                self.__name = ""
+                self.__gender = ""
+                self.__city = ""
+                self.__salary = 0
+                print("Object Initialized.")
+
+        def __del__(self): #Destructor
+                print("Object Destroyed.")
+
+        def setData(self):
+                self.__id=int(input("Enter Id\t:"))
+                self.__name = input("Enter Name\t:")
+                self.__gender = input("Enter Gender:")
+                self.__city = input("Enter City\t:")
+                self.__salary = int(input("Enter Salary:"))
+
+        def __str__(self):
+                data = "["+str(self.__id)+","+self.__name+","+self.__gender+","+self.__city+","+str(self.__salary)+"]"
+                return data
+
+        def showData(self):
+                print("Id\t\t:",self.__id)
+                print("Name\t:", self.__name)
+                print("Gender\t:", self.__gender)
+                print("City\t:", self.__city)
+                print("Salary\t:", self.__salary)
+
+
+def main():
+        #Employee Object
+        emp=Employee()
+        emp.setData()
+        emp.showData()
+        print(emp)
+
+if __name__=="__main__":
+        main()
+
+8.# class program
+
+class Vehicle:
+    def __init__(self, max_speed, mileage):
+        self.max_speed = max_speed
+        self.mileage = mileage
+
+x = Vehicle(240, 18)
+print(x.max_speed, x.mileage)
+
+9. #class program 
+
+class Student:
+    count = 0
+    def __init__(self):
+        Student.count = Student.count + 1
+Student()
+Student()
+Student()
+Student ()
+print("The number of students:",Student.count)
+
+10.# class program
+
+class Student:
+    def __init__(self, name, id, age):
+        self.name = name
+        self.id = id
+        self.age = age
+s = Student("John", 101, 22)
+# prints the attribute name of the object s
+print(getattr(s, 'name'))
+# reset the value of attribute age to 23
+setattr(s, "age", 23)
+# prints the modified value of age
+print(getattr(s, 'age'))
+# prints true if the student contains the attribute with name id
+print(hasattr(s, 'id'))
+# deletes the attribute age
+delattr(s, 'age')
+
+#11.class program
+
+class Scaler:
+    Course1 = 'Python'
+    Course2 = 'C++'
+    Course3 = 'Java'
+# Accessing the values of the attributes
+print(Scaler.Course1)
+print(Scaler.Course3)
+# Accessing through object instantiation.
+obj= Scaler()
+print(obj.Course2)
+
+# Defining a function which generates
+# list of all the Phones
+def prices(rec, phnname, model, price):
+    rec.append(Phone(phnname, model, price))
+    return rec
+
+# Main Code
+Record = []
+x = 'y'
+while x == 'y':
+    phnname = input('Enter the name of the Phone: ')
+    height = input('Enter the model number: ')
+    model = input('price: ')
+    Record = prices(Record, phnname, model, height)
+    x = input('Another Phone? y/n: ')
+
+# Printing the list of Phone
+n = 1
+print("---The list of the phone that store have---")
+for el in Record:
+    print(n,'. ', el)
+    n = n + 1
+
+#12.mobile app

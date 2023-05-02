@@ -1,0 +1,59 @@
+1. What is Python?
+
+1. Python is a very popular general-purpose interpreted, interactive, object-oriented, and high-level programming language. 
+    Python is dynamically-typed and garbage-collected programming language.
+
+2. Python supports multiple programming paradigms, including Procedural, Object Oriented and
+    Functional programming language
+
+2. Why Python:
+
+1. Python is Open Source which means its available free of cost.
+2. Python is simple and so easy to learn
+3. Python is versatile and can be used to create many different things.
+4. Python has powerful development libraries include AI, ML etc.
+5. Python is much in demand and ensures high salary
+
+3. key advantages of learning Python:
+
+Python is Interpreted − Python is processed at runtime by the interpreter. You do not need to compile your program before executing it. 
+                                            This is similar to PERL and PHP.
+Python is Interactive −  You can actually sit at a Python prompt and interact with the interpreter directly to write your programs. 
+
+Python is Object-Oriented − Python supports Object-Oriented style or technique of programming that encapsulates code within objects.
+
+4. What can Python do?
+
+Python can be used on a server to create web applications.
+Python can be used alongside software to create workflows.
+Python can connect to database systems. It can also read and modify files.
+Python can be used to handle big data and perform complex mathematics.
+Python can be used for rapid prototyping, or for production-ready software develop
+
+5.Python Indentation
+
+1. Indentation refers to the spaces at the beginning of a code line.
+2. Where in other programming languages the indentation in code is for readability only, 
+     the indentation in Python is very important.
+3. Python uses indentation to indicate a block of code.
+
+
+5. Careers with Python:
+
+Game developer
+Web designer
+Python developer
+Full-stack developer
+Machine learning engineer
+Data scientist
+Data analyst
+Data engineer
+DevOps engineer
+Software engineer
+
+6.Declare different types of variables; print their types, ids and variables in Python.
+
+There are two inbuilt functions are using in the program:
+
+type() - its returns the data type of the variable/object.
+id() - it returns the unique identification number (id) of created object/variable.

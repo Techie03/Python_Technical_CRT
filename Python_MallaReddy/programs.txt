@@ -1,0 +1,23 @@
+Q6.Create number variables (int, float and complex) and print their types and values in Python 
+Q8.Find factorial of a given number
+Q9.Calculate square of a given number
+Q10.Print all numbers between 1 to 1000 which are divisible by 7 and must not be divisible by 5
+
+Q11.Program to print numbers from N to 1
+
+range() Method
+This method is used to iterate a range values.
+Simply, we use range(start, stop)
+
+if we want to iterate any loop till a to b, then range statement will be range(a, b+1).
+
+Iterate in reverse order
+
+To iterate range in reverse order, we use 3 parameters
+
+Start – start value
+Stop – end value
+Step – Increment/Decrement to the value
+
+Q12.Python program to extract and print digits in reverse order of a number
+Q13.Python program to reverse a given number 

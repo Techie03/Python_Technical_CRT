@@ -1,0 +1,65 @@
+String Operators
+
+Operator		Description
++		It is known as concatenation operator used to join the strings given either side of the operator.
+
+*		It is known as repetition operator. It concatenates the multiple copies of the same string.
+
+[]		It is known as slice operator. It is used to access the sub-strings of a particular string.
+
+[:]		It is known as range slice operator. It is used to access the characters from the specified range.
+
+in		It is known as membership operator. It returns if a particular sub-string is present in the specified string.
+
+not in		It is also a membership operator and does the exact reverse of in. It returns true if a particular substring is not present in the specified string.
+
+
+ use the triple quotes to accomplish this problem but Python provides the escape sequence.
+
+The backslash(/) symbol denotes the escape sequence. 
+
+The backslash can be followed by a special character and it interpreted differently. 
+
+The single quotes inside the string must be escaped
+
+
+11. Given a string, and we have to print the EVEN length words in Python.
+
+Example:
+
+    Input:
+    str: Python is a programming language
+
+    Output: 
+    EVEN length words:
+    Python 
+    is
+    language
+
+Logic:
+
+To print the EVEN length words, we have to check length of each word.
+
+For that, first of all, we have to extract the words from the string and assigning them in a list.
+
+Iterate the list using loop.
+
+Count the length of each word, and check whether length is EVEN (divisible by 2) or not.
+
+If word's length is EVEN, print the word.
+
+12.Count vowels in a string ?
+
+13. Create multiple copies of a string by using multiplication operator
+
+14. python program to check substring presents in the string or not
+
+# Python String Methods
+
+Method			Description
+
+capitalize()	Converts the first character to upper case
+casefold()	Converts string into lower case
+center()		Returns a centered string
+count()		Returns the number of times a specified value occurs in a string
+endswith()	Returns true if the string ends with the specified value

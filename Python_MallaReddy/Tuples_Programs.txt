@@ -1,0 +1,200 @@
+1. Python program to find the size of a tuple 
+
+# Creating a tuple in python 
+myTuple = ('includehelp', 'python', 3, 2021)
+
+# Finding size of tuple using len() method 
+tupleLength = len(myTuple)
+
+# Printing the tuple and Length
+print("Tuple : ", str(myTuple))
+print("Tuple Length : ", tupleLength)
+
+2. Python program to find the size of a tuple 
+
+# Creating a tuple in python 
+myTuple = ('includehelp', 'python', 3, 2021)
+
+# Finding size of tuple
+tupleSize = myTuple.__sizeof__()
+
+# Printing the tuple and size
+print("Tuple : ", str(myTuple))
+print("Tuple Length : ", tupleSize)
+
+3. # Python program to find the size of a tuple 
+
+import sys
+
+# Creating a tuple in python 
+myTuple = ('includehelp', 'python', 3, 2021)
+
+# Finding size of tuple
+tupleSize = sys.getsizeof(myTuple)
+
+# Printing the tuple and size
+print("Tuple : ", str(myTuple))
+print("Tuple Length : ", tupleSize)
+
+4.# Adding a Tuple to a list
+
+# Python program to add a tuple to list 
+
+# Creating the List
+myList = [9, 3, 1, 4]
+
+# Printing the List 
+print("Initially List : " + str(myList))
+
+# Creating Tuple
+myTuple = (2, 6)
+
+# Adding the tuple to list
+myList += myTuple
+
+# Printing resultant List
+print("List after Addition : " + str(myList))
+
+5.#Adding a list to a Tuple
+
+# Python program to add a tuple to list 
+
+# Creating the List
+myTuple = (9, 3, 1, 4)
+
+
+# Printing the List 
+print("Tuple Initially : " + str(myTuple))
+
+# Creating Tuple
+myList = [2, 6]
+
+# Adding the tuple to list
+addList = list(myTuple)
+addList += myList
+myTuple = tuple(addList)
+
+# Printing resultant List
+print("Tuple after Addition : " + str(myTuple))
+
+#6.Program to check if any list element is present in Tuple
+
+# Python program to check if any list element 
+# is present in tuple 
+
+# Creating and printing lists and tuples 
+myTuple = (5, 1, 8, 3, 9)
+print("The tuple elements are " + str(myTuple))
+myList = [2, 4, 7, 8, 0]
+print("The list elements are " + str(myList))
+
+7. # Checking if any list element 
+# is present in tuple
+isPresent = False
+for ele in myList:	
+	if ele in myTuple :
+		isPresent = True
+		break
+		
+print("Is there any element in the list which is also present in tuple ? : " + str(isPresent))
+
+8. # Python program to check if any list element
+# is present in tuple 
+
+# Creating and printing lists and tuples 
+myTuple = (5, 1, 8, 3, 9)
+print("The tuple elements are " + str(myTuple))
+myList = [2, 4, 7, 8, 0]
+print("The list elements are " + str(myList))
+
+# Checking if any list element is present in tuple
+isPresent = any(val in myTuple for val in myTuple)
+		
+print("Is there any element in the list which is also present in tuple ? : " + str(isPresent))
+
+#9.Updating Each element in Tuple List
+
+# Initializing and printing the list of tuples 
+
+tupList = [(12, 8), (5, 2), (1, 3, 7, 8)]
+
+print("The elements of list of tuple are " + str(tupList))
+updateVal = 6
+
+# Updating list of tuple by adding the given element
+updatedList = [tuple(j + updateVal for j in tup ) for tup in tupList]
+
+print("List after adding the update element to each element : " + str(updatedList))
+
+#10.Python program to check if a tuple is a subset of another tuple
+
+# Python program to check if a tuple 
+# is a subset of another tuple
+
+# Initializing and printing tuple 
+tup1 = (4, 1, 6)
+tup2 = (2, 4, 8, 1, 6, 5)
+print("The elements of tuple 1 : " + str(tup1))
+print("The elements of tuple 2 : " + str(tup2))
+
+# Checking for subsets 
+isSubset = set(tup1).issubset(tup2)
+
+if isSubset : 
+    print("tup1 is a subset of tup2")
+else : 
+    print("tup1 is not a subset of tup2")
+
+
+11. #Creating a list of tuples from given list
+#having number and its cube in each tuple
+
+# Creating a list
+myList = [6, 2, 5 ,1, 4]
+
+# Creating list of tuples
+tupleList = []
+for val in myList:
+    myTuple = (val, (val*val*val))
+    tupleList.append(myTuple)
+
+# print the result
+print("The list of Tuples is " , str(tupleList))
+
+12.## Creating and printing the
+# tuples of integer values
+
+myTuple = (7, 8, 9, 1, 10, 7)
+# printing original tuple
+print("The original tuple is : " + str(myTuple))
+# finding sum of all tuple elements
+tupSum = sum(list(myTuple))
+# Printing the Tuple sum
+print("The summation of tuple elements are : " + str(tupSum))
+
+13.## 2. slicing
+
+num_tuple = 2, 4, 5, 7, 8, 10
+
+print(num_tuple[:3])
+print(num_tuple[4:])
+print(num_tuple[-3:])
+print(num_tuple[2:5])
+
+14.## diff b/w tuples vs lists
+
+import sys
+a_list = ['abc', 'xyz', 123, 231, 13.31, 0.1312]
+a_tuple = ('abc', 'xyz', 123, 231, 13.31, 0.1312)
+print('The list size:', sys.getsizeof(a_list), 'bytes')
+print('The tuple size:', sys.getsizeof(a_tuple), 'bytes')
+
+
+
+
+
+
+
+
+
+
